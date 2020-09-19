@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.pillager": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ],
+	  "overlay_color" : {
+          "r": "variable.Xvar>50 ? 1.0 : -0.7",
+          "g": "variable.Xvar>50 ? 1.0 : -0.7",
+          "b": "variable.Xvar>50 ? 0.7 : -1.0",
+          "a": "math.abs(variable.Xvar-50)*0.003"
+      }
+    }
+  }
+}

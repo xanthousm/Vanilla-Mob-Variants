@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cow": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ 
+            "Texture.default",
+            "Texture.default2",
+            "Texture.default3",
+			"Texture.default4",
+            "Texture.default5",
+            "Texture.default6",
+            "Texture.default"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "query.is_baby ? Texture.default_b : Array.skins[variable.Xvar]" ],
+	  "overlay_color" : {
+          "r": "variable.Xvar>50 ? 1.0 : -0.7",
+          "g": "variable.Xvar>50 ? 1.0 : -0.7",
+          "b": "variable.Xvar>50 ? 0.7 : -1.0",
+          "a": "math.abs(variable.Xvar-50)*0.003"
+      }
+    }
+  }
+}

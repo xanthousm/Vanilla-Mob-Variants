@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:pig",
+      "min_engine_version": "1.8.0",
+      "materials": { "default": "pig" },
+      "textures": {
+        "default": "textures/entity/pig/pig",
+        "default2": "textures/entity/pig/pig2",
+        "default3": "textures/entity/pig/pig3",
+        "default4": "textures/entity/pig/pig4",
+        "default5": "textures/entity/pig/pig5",
+        "default6": "textures/entity/pig/pig6",
+        "default_b": "textures/entity/pig/pig_b",
+
+        "saddled": "textures/entity/pig/pig_saddle"
+      },
+      "geometry": {
+        "default": "geometry.pig.v1.8"
+      },
+      "animations": {
+        "setup": "animation.pig.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.pig.baby_transform"
+      },
+      "scripts": {
+        "initialize": [
+           "variable.Xvar = Math.random(0,99);"
+        ],
+        "animate": [
+          "setup",
+          { "walk": "query.modified_move_speed" },
+          "look_at_target",
+          { "baby_transform": "query.is_baby" }
+        ]
+      },
+      "render_controllers": [ "controller.render.pig" ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 2
+      }
+    }
+  }
+}
