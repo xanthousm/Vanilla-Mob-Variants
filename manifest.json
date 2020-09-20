@@ -1,12 +1,12 @@
 {
     "format_version": 2,
     "header": {
-        "name" : "Vanilla Mob Variants",
+        "name" : "Vanilla Mob Variants V1.1",
       "description" : "Randomised mob textures, tints, and baby animals!\nVote for the next update on §aMCPEDL§r!\n- §2xanion",
       "uuid" : "7ccd2d86-1d64-43c6-b3f9-b79498626b30",
         "version": [
             1,
-            0,
+            1,
             0
         ],
         "min_engine_version": [
@@ -21,7 +21,7 @@
             "uuid" : "f7e2ed38-408a-4c89-a6ed-3bf4ef59413b",
             "version": [
                 1,
-                0,
+                1,
                 0
             ]
         }
