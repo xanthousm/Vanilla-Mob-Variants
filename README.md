@@ -13,9 +13,14 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - Sheep (T)
 - Bee (T)
 - Fox (T)
+- Slime (VT)
 - Drowned (VT)
+- Zombie (T)
+- Skeleton (T)
 - Pillager (T)
 - Piglin (T)
+- Piglin Brute (T)
+- Zombified Piglin (T)
 - Strider (T)
 - Squid (T)(broken)
 ### Planned Features: 
@@ -23,3 +28,5 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - More variant textures
 - Optional behaviour pack for persistant variant textures
 - Tint-only version to work better with other texture packs
+- Name-based variants
+- Pet colar color-based variants
