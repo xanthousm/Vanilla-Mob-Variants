@@ -7,7 +7,7 @@
       "materials": { "default": "zombie" },
       "textures": {
         "default": "textures/entity/piglin/zombie_piglin",
-		"default2": "textures/entity/piglin/zombie_piglin2"
+		"default2": "textures/entity/piglin/v/zombie_piglin2"
       },
       "geometry": {
         "default": "geometry.piglin"
@@ -61,7 +61,7 @@
         { "use_item_progress": "controller.animation.humanoid.use_item_progress" },
         { "zombie_attack_bare_hand": "controller.animation.zombie.attack_bare_hand" }
       ],
-      "render_controllers": [ "controller.render.zombie_pigman" ],
+      "render_controllers": [ "controller.render.zombie_pigman_x" ],
       "enable_attachables": true
     }
   }

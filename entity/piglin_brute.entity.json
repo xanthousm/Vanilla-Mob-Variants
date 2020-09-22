@@ -8,7 +8,7 @@
       },
       "textures": {
         "default": "textures/entity/piglin/piglin_brute",
-        "default2": "textures/entity/piglin/piglin_brute2"
+        "default2": "textures/entity/piglin/v/piglin_brute2"
       },
       "geometry": {
         "default": "geometry.piglin"

@@ -9,11 +9,11 @@
       },
       "textures": {
         "default": "textures/entity/chicken",
-        "default2": "textures/entity/chicken/chicken2",
-        "default3": "textures/entity/chicken/chicken3",
-        "default4": "textures/entity/chicken/chicken4",
-		"default5": "textures/entity/chicken/chicken5",
-        "default6": "textures/entity/chicken/chicken6",
+        "default2": "textures/entity/chicken/v/chicken2",
+        "default3": "textures/entity/chicken/v/chicken3",
+        "default4": "textures/entity/chicken/v/chicken4",
+		"default5": "textures/entity/chicken/v/chicken5",
+        "default6": "textures/entity/chicken/v/chicken6",
         "default_b": "textures/entity/chicken/chicken_b"
       },
       "geometry": {

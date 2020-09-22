@@ -9,11 +9,11 @@
       },
       "textures": {
         "default": "textures/entity/zombie/drowned",
-        "default2": "textures/entity/zombie/drowned2",
-        "default3": "textures/entity/zombie/drowned3",
-        "default4": "textures/entity/zombie/drowned4",
-        "default5": "textures/entity/zombie/drowned5",
-        "default6": "textures/entity/zombie/drowned6"
+        "default2": "textures/entity/zombie/v/drowned2",
+        "default3": "textures/entity/zombie/v/drowned3",
+        "default4": "textures/entity/zombie/v/drowned4",
+        "default5": "textures/entity/zombie/v/drowned5",
+        "default6": "textures/entity/zombie/v/drowned6"
       },
       "geometry": {
         "default": "geometry.zombie.drowned.v1.16"

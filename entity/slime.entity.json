@@ -9,11 +9,11 @@
       },
       "textures": {
         "default": "textures/entity/slime/slime",
-		"default2": "textures/entity/slime/slime2",
-		"default3": "textures/entity/slime/slime3",
-		"default4": "textures/entity/slime/slime4",
-		"default5": "textures/entity/slime/slime5",
-		"default6": "textures/entity/slime/slime6"
+		"default2": "textures/entity/slime/v/slime2",
+		"default3": "textures/entity/slime/v/slime3",
+		"default4": "textures/entity/slime/v/slime4",
+		"default5": "textures/entity/slime/v/slime5",
+		"default6": "textures/entity/slime/v/slime6"
       },
       "geometry": {
         "default": "geometry.slime",

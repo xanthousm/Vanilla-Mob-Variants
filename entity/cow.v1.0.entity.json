@@ -6,11 +6,11 @@
       "materials": { "default": "cow" },
       "textures": {
         "default": "textures/entity/cow/cow",
-        "default2": "textures/entity/cow/cow2",
-        "default3": "textures/entity/cow/cow3",
-        "default4": "textures/entity/cow/cow4",
-		"default5": "textures/entity/cow/cow5",
-        "default6": "textures/entity/cow/cow6",
+        "default2": "textures/entity/cow/v/cow2",
+        "default3": "textures/entity/cow/v/cow3",
+        "default4": "textures/entity/cow/v/cow4",
+		"default5": "textures/entity/cow/v/cow5",
+        "default6": "textures/entity/cow/v/cow6",
         "default_b": "textures/entity/cow/cow_b"
       },
       "geometry": {

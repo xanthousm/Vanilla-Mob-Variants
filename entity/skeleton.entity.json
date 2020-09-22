@@ -9,7 +9,7 @@
       },
       "textures": {
         "default": "textures/entity/skeleton/skeleton",
-		"default2": "textures/entity/skeleton/skeleton2"
+		"default2": "textures/entity/skeleton/v/skeleton2"
       },
       "geometry": {
         "default": "geometry.skeleton.v1.8"
