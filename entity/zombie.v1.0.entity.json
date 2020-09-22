@@ -6,7 +6,9 @@
       "materials": { "default": "zombie" },
       "textures": { 
 		"default": "textures/entity/zombie/zombie", 
-		"default2": "textures/entity/zombie/v/zombie2" 
+		"default2": "textures/entity/zombie/v/zombie2", 
+		"default3": "textures/entity/zombie/va/zombie2",
+		"default4": "textures/entity/zombie/ex/zombie2"		
 	  },
       "geometry": { "default": "geometry.zombie" },
       "scripts": {

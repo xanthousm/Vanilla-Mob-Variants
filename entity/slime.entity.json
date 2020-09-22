@@ -13,7 +13,11 @@
 		"default3": "textures/entity/slime/v/slime3",
 		"default4": "textures/entity/slime/v/slime4",
 		"default5": "textures/entity/slime/v/slime5",
-		"default6": "textures/entity/slime/v/slime6"
+		"default6": "textures/entity/slime/v/slime6",
+		"default7": "textures/entity/slime/va/slime2",
+		"default8": "textures/entity/slime/va/slime3",
+		"default9": "textures/entity/slime/va/slime4",
+		"default10": "textures/entity/slime/va/slime5"
       },
       "geometry": {
         "default": "geometry.slime",

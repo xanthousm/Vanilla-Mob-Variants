@@ -24,7 +24,7 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - Slime (Vx9,T)
 - Zombie (Vx2,T)
 - Skeleton (Vx1,T)
-- Creeper (Vx17,T)
+- Creeper (Vx13,T)
 - Drowned (Vx5,T)
 - Pillager (T)
 - Piglin (T)
