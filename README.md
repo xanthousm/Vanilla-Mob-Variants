@@ -17,16 +17,19 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - Aprox. 40 different subtle tint variations*
 - Aprox. 5 different height variations
 - Baby-specific variants for some mobs
-- **5 different resource pack settings:**
-	- Community Vanilla: Tint, size, texture variants. Vanilla defined by the discord community!
-	- Simple Vanilla: Tint, size, texture variants. Sticks very close to the original art style!
-	- Pure Vanilla: No textures, just tint and size variants. Good when using other texture packs!
-	- Community Unlimited: Want a little bit more than plain old vanilla? Here's ALL the community's textures!
-	- Custom: Use your own personal textures! Replace the texture files in the 'v' and 'c' folders.
-
 *Tints are disabled for:
 - Sheep to see wool color more easily
 - Creepers since it is used for the explsion animation
+
+### 5 Different Resource Pack Settings:
+Control the kinds of variants you see by clicking on the pack's gear icon in the resource pack selection panel.
+- Community Vanilla: Tint, size, texture variants. Vanilla defined by the discord community!
+- Simple Vanilla: Tint, size, texture variants. Sticks very close to the original art style!
+- Pure Vanilla: No textures, just tint and size variants. Good when using other texture packs!
+- Community Unlimited: Want a little bit more than plain old vanilla? Here's ALL the community's textures!
+- Custom: Use your own personal textures! Replace the texture files in the 'v' and 'c' folders.
+
+![Settings Preview](https://github.com/xanthousm/Vanilla-Mob-Variants/blob/master/media/options_preview.png)
 
 ### Currently Excluded Mobs: 
 - Dog (WIP)
