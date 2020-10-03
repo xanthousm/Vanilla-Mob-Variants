@@ -22,7 +22,7 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - Creepers since it is used for the explsion animation
 
 ### 5 Different Resource Pack Settings:
-Control the kinds of variants you see by clicking on the pack's gear icon in the resource pack selection panel.
+Control the kinds of variants you see by clicking on the pack's gear icon in the resource pack selection panel. After changing the setting slider, just exit the menu to apply the new setting.
 - Community Vanilla: Tint, size, texture variants. Vanilla defined by the discord community!
 - Simple Vanilla: Tint, size, texture variants. Sticks very close to the original art style!
 - Pure Vanilla: No textures, just tint and size variants. Good when using other texture packs!
