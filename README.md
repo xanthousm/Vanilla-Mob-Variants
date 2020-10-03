@@ -14,12 +14,12 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - Aprox. 40 different subtle tint variations*
 - Aprox. 5 different height variations
 - Baby-specific variants for some mobs
-- 5 different resource pack settings:
-	- Community Vanilla
-	- Simple Vanilla
-	- Pure Vanilla
-	- Community Unlimited
-	- Custom
+- **5 different resource pack settings:**
+	- Community Vanilla: Tint, size, texture variants. Vanilla defined by the discord community!
+	- Simple Vanilla: Tint, size, texture variants. Sticks very close to the original art style!
+	- Pure Vanilla: No textures, just tint and size variants. Good when using other texture packs!
+	- Community Unlimited: Want a little bit more than plain old vanilla? Here's ALL the community's textures!
+	- Custom: Use your own personal textures! Replace the texture files in the 'v' and 'c' folders.
 
 *Tints are disabled for:
 - Sheep to see wool color more easily
@@ -48,4 +48,4 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - Optional behaviour pack for persistant variant textures
 - Name-based variants
 - Pet colar color-based variants
-- a "overlay pack" template to easily replace textures with personal textures
+- An "overlay pack" template to easily replace textures with personal textures
