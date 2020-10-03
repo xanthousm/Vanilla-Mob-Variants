@@ -10,7 +10,7 @@ The latest version of the .mcpack (**V1.9**) can be downloaded under the "assets
 ### Why a resource pack?
 Unlike addons that use a behaviour pack, resource packs can be applied in the global resources settings and then used everywhere - server, realms, and survival worlds without disabling achievements. Just set and forget!
 
-![Current Mob List](https://github.com/xanthousm/Vanilla-Mob-Variants/media/full_list.png)
+![Current Mob List](https://github.com/xanthousm/Vanilla-Mob-Variants/blob/master/media/full_list.png)
 
 ### Current Features For Each Mob: 
 - At least 9 new texture variants
