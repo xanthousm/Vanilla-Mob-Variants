@@ -14,8 +14,8 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 
 ### Current Features For Each Mob: 
 - At least 9 new texture variants
-- Aprox. 40 different subtle tint variations*
-- Aprox. 5 different height variations
+- Approx. 40 different subtle tint variations*
+- Approx. 5 different height variations
 - Baby-specific variants for some mobs
 *Tints are disabled for:
 - Sheep to see wool color more easily
