@@ -1,12 +1,12 @@
 {
     "format_version": 2,
     "header": {
-        "name" : "Vanilla Mob Variants V1.3",
-      "description" : "Randomised mob textures, tints, and baby animals!\nVoting, feedback, and updates on §aour discord§r!\n- §2xanion",
-      "uuid" : "7ccd2d86-1d64-43c6-b3f9-b79498626b30",
+        "name" : "Vanilla Mob Variants V1.9 (2.0 Beta)",
+      "description" : "Randomised mob textures, tints, sizes, and more!\nMultiple pack presets - click the gear icon\nUpdates and feature voting on the §9discord§r\n - by xanion",
+      "uuid" : "7ccd2d86-1d64-43c6-b3f9-b79498626b29",
         "version": [
             1,
-            3,
+            9,
             0
         ],
         "min_engine_version": [
@@ -21,9 +21,36 @@
             "uuid" : "f7e2ed38-408a-4c89-a6ed-3bf4ef59413b",
             "version": [
                 1,
-                3,
+                9,
                 0
             ]
         }
+    ],
+	"subpacks": [
+    	{
+   		"folder_name": "C",
+    		"name": "§lCustom§r \nUse your own personal textures. \nReplace the texture files in the 'v' and 'c' folders!",
+    		"memory_tier": 1
+    	},
+		{
+   		"folder_name": "CU",
+    		"name": "§lCommunity Unlimited§r \nWant a little bit more than plain old vanilla? \nHere's ALL the community's textures!",
+    		"memory_tier": 1
+    	},
+		{
+   		"folder_name": "V",
+    		"name": "§lPure Vanilla§r \nNo textures, just tint and size variants. \nGood when using other texture packs!",
+    		"memory_tier": 1
+    	},
+		{
+   		"folder_name": "SV",
+    		"name": "§lSimple Vanilla§r \nTint, size, texture variants. \nSticks very close to the original art style!",
+    		"memory_tier": 1
+    	},
+    	{
+     		"folder_name": "CV",
+    		"name": "§lCommunity Vanilla§r \nTint, size, texture variants. \nVanilla defined by the discord community!",
+    		"memory_tier": 1
+    	}
     ]
 }

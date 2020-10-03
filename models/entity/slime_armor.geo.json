@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"geometry.slime.armor": {
+		"texturewidth": 64,
+		"textureheight": 32,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0, 0],
+		"bones": [
+			{
+				"name": "cube",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 0, -4], "size": [8, 8, 8], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "eye0",
+				"parent": "cube",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-3.4, 4, -3.5], "size": [2, 2, 2], "uv": [32, 0]}
+				]
+			},
+			{
+				"name": "eye1",
+				"parent": "cube",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [1.4, 4, -3.5], "size": [2, 2, 2], "uv": [32, 4]}
+				]
+			},
+			{
+				"name": "mouth",
+				"parent": "cube",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [0, 2, -3.5], "size": [1, 1, 1], "uv": [32, 8]}
+				]
+			}
+		]
+	}
+}
