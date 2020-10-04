@@ -1,11 +1,10 @@
 # Vanilla Mob Variants
-Feedback & voting discord: https://discord.gg/UbjD9ny
 
-Taking inspiration from Optifine's random alternate mob textures, this resource pack brings **aprox. 800 variations PER MOB, for almost EVERY MOB in the game!** This is done using a combination of alternate textures (including baby-specific textures) and entity tinting to make even mobs with the same texture look slightly unique. This pack will continue to be updated with more mobs and textures as long as people show interest in it!
+Taking inspiration from Optifine's random alternate mob textures, this resource pack brings **aprox. 800 variations PER MOB, for almost EVERY MOB in the game!** This is done using a combination of alternate textures, entity tinting, and model scaling to make mobs with even the same texture look slightly unique. This pack will continue to be updated with more mobs and textures as long as people show interest in it!
 
 I'd also like to thank some amazing community members that have gone out of their way to make new variants based on the vanilla textures. All community texture artists and thier work can be found [in the Credits file](Credits.md)!
 
-The latest version of the .mcpack (**V1.9**) can be downloaded under the "assets" section of the releases page [here](https://github.com/xanthousm/Vanilla-Mob-Variants/releases/latest)!
+The latest version of the .mcpack (**V1.9**) can be downloaded under the "assets" section of the releases page [here](https://github.com/xanthousm/Vanilla-Mob-Variants/releases/latest)! For more up-to-date news and feature voting on the pack, check out our discord: https://discord.gg/UbjD9ny
 
 ### Why a resource pack?
 Unlike addons that use a behaviour pack, resource packs can be applied in the global resources settings and then used everywhere - server, realms, and survival worlds without disabling achievements. Just set and forget!
@@ -19,7 +18,7 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 - Baby-specific variants for some mobs
 *Tints are disabled for:
 - Sheep to see wool color more easily
-- Creepers since it is used for the explsion animation
+- Creepers since it is used for the explosion animation
 
 ### 5 Different Resource Pack Settings:
 Control the kinds of variants you see by clicking on the pack's gear icon in the resource pack selection panel. After changing the setting slider, just exit the menu to apply the new setting.
