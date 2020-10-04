@@ -9,6 +9,8 @@ The latest version of the .mcpack (**V1.9**) can be downloaded under the "assets
 ### Why a resource pack?
 Unlike addons that use a behaviour pack, resource packs can be applied in the global resources settings and then used everywhere - server, realms, and survival worlds without disabling achievements. Just set and forget!
 
+The only downside to this is that the mobs will randomise their texture each time they are rendered – but this could be fixed using an optional behaviour pack (if enough people want it).
+
 ![Current Mob List](https://github.com/xanthousm/Vanilla-Mob-Variants/blob/master/media/full_list.png)
 
 ### Current Features For Each Mob: 
@@ -48,6 +50,11 @@ Control the kinds of variants you see by clicking on the pack's gear icon in the
 - Tropical fish
 
 #### ALL OTHER MOBS HAVE VARIANTS!
+
+### Current Limitations: 
+- Tamed and named mobs do not have persistant textures
+- Saddled pigs/striders permenantly revert to the original texture
+- Wolves temporarily revert to the original texture when angry
 
 ### Planned Features: 
 - Optional behaviour pack for persistant variant textures
