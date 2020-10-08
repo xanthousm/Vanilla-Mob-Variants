@@ -11,7 +11,7 @@ Unlike addons that use a behaviour pack, resource packs can be applied in the gl
 
 The only downside to this is that the mobs will randomise their texture each time they are rendered – but this could be fixed using an optional behaviour pack (if enough people want it).
 
-![Current Mob List](https://github.com/xanthousm/Vanilla-Mob-Variants/blob/master/media/full_list.png)
+![Current Mob List](https://github.com/xanthousm/Vanilla-Mob-Variants/blob/master/media/full_list_v2.png)
 
 ### Current Features For Each Mob: 
 - At least 9 new texture variants
