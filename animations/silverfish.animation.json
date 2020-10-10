@@ -2,7 +2,6 @@
 	"format_version" : "1.8.0",
 	"animations" : {
 		"animation.silverfish.move" : {
-			"anim_time_update" : "query.modified_distance_moved",
 			"loop" : true,
 			"bones" : {
 				"bodypart_0" : {

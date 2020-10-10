@@ -9,7 +9,7 @@ Though I (xanion#8113) spent a lot of time thinking up the gimmicks used to make
 **Stick Boy#3710**
 - camo creepers (cv8-13,15,16)
 - coaly skeleton edit (cv3)
-- snow golems (cv4-9,cu2)
+- snow golems (cv4-9,'blood')
 - squids (cv2-7)
 - sea turtles (cv5-7, cu2-5)
 - bats (cv2-4)
@@ -21,14 +21,17 @@ Though I (xanion#8113) spent a lot of time thinking up the gimmicks used to make
 - mc dungeon creeper (cv14)
 - brown spider (cv2)
 - cobble magma cube (cv2)
+- mc dungeon mossy skele (cv4)
 
 **NikoAlb#8836**
 - tinted slimes (cv3-5)
 - sporty zombie (cu2)
 - scarf snow golem (cv10)
 - ravager (cv2)
-- silverfish rat (cv2)
+- silverfish rat (cu2)
 - blue blaze (cv2)
+- flowery golem (cv4)
+- vindicator (cv2)
 
 **win epic fin#8123**
 - color eyed endermen (cv2-4)
@@ -39,3 +42,7 @@ Though I (xanion#8113) spent a lot of time thinking up the gimmicks used to make
 
 **THEGOODSHOT#9258**
 - bright chickens (cu2,3)
+
+**ProbablySoul#3666**
+- brown phantom (cv2)
+- pink dolphin (cv2)
