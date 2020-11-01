@@ -4,7 +4,7 @@ Taking inspiration from Optifine's random alternate mob textures, this resource 
 
 I'd also like to thank some amazing community members that have gone out of their way to make new variants based on the vanilla textures. All community texture artists and thier work can be found [in the Credits file](Credits.md)!
 
-The latest version of the .mcpack (**V1.9**) can be downloaded under the "assets" section of the releases page [here](https://github.com/xanthousm/Vanilla-Mob-Variants/releases/latest)! For more up-to-date news and feature voting on the pack, check out our discord: https://discord.gg/UbjD9ny
+The latest version of the .mcpack can be downloaded under the "assets" section of the releases page [here](https://github.com/xanthousm/Vanilla-Mob-Variants/releases/latest)! For more up-to-date news and feature voting on the pack, check out our discord: https://discord.gg/UbjD9ny
 
 ### Why a resource pack?
 Unlike addons that use a behaviour pack, resource packs can be applied in the global resources settings and then used everywhere - server, realms, and survival worlds without disabling achievements. Just set and forget!
