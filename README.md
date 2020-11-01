@@ -14,7 +14,7 @@ The only downside to this is that the mobs will randomise their texture each tim
 ![Current Mob List](https://github.com/xanthousm/Vanilla-Mob-Variants/blob/master/media/full_list_v2.png)
 
 ### Current Features For Each Mob: 
-- At least 9 new texture variants
+- Aprox. 9 new texture variants
 - Approx. 40 different subtle tint variations*
 - Approx. 5 different height variations
 - Baby-specific variants for some mobs
@@ -32,32 +32,7 @@ Control the kinds of variants you see by clicking on the pack's gear icon in the
 
 ![Settings Preview](https://github.com/xanthousm/Vanilla-Mob-Variants/blob/master/media/options_preview.png)
 
-### Currently Excluded Mobs: 
-- Dog (WIP)
-- Cat
-- Ocelot
-- Fox
-- Rabbit
-- Bee
-- Mooshroom
-- Strider
-- Ghast
-- Shulker
-- Horses
-- Lamma
-- Panda
-- Parrot
-- Tropical fish
-
-#### ALL OTHER MOBS HAVE VARIANTS!
-
 ### Current Limitations: 
 - Tamed and named mobs do not have persistant textures
 - Saddled pigs/striders permenantly revert to the original texture
 - Wolves temporarily revert to the original texture when angry
-
-### Planned Features: 
-- Optional behaviour pack for persistant variant textures
-- Name-based variants
-- Pet colar color-based variants
-- An "overlay pack" template to easily replace textures with personal textures

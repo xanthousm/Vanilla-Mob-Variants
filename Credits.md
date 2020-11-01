@@ -8,13 +8,13 @@ Though I (xanion#8113) spent a lot of time thinking up the gimmicks used to make
 
 **Stick Boy#3710**
 - camo creepers (cv8-13,15,16)x
-- coaly skeleton edit (cv3)
+- coaly skeleton edit based on nest's(cv3)
 - snow golems (cv4-9,'blood')x
 - squids (cv2-7)x
 - sea turtles (cv5-7, cu2-5)x
 - bats (cv2-4)
 - iron golems (cv2,3)
-- blue blaze edit (cv3)
+- blue blaze edit based on niko's(cv3)
 - tinted slimes (cv6-8)
 - grey zombie (cv3)
 
@@ -52,4 +52,12 @@ Though I (xanion#8113) spent a lot of time thinking up the gimmicks used to make
 - pink dolphin (cv2)
 
 **ALoafOfBread#9842**
-- blue balze (cv4)
+- blue balze alt (cv4)
+
+**Lucas lisboa titan#2597**
+- alex zombie (cv4)
+- dark brown, black chicken (cv2-3)
+- ore creepers edit based on stick's(cu2-6)
+
+**Buggy#9245**
+- fletcher pillager (cv2)

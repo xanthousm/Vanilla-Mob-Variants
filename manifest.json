@@ -1,12 +1,12 @@
 {
     "format_version": 2,
     "header": {
-        "name" : "Vanilla Mob Variants V2.5",
+        "name" : "Vanilla Mob Variants V2.6",
       "description" : "Randomised mob textures, tints, sizes, and more!\nMultiple pack presets - click the gear icon\nUpdates and feature voting on the §9discord§r\n - by xanion",
       "uuid" : "7ccd2d86-1d64-43c6-b3f9-b79498626b29",
         "version": [
             2,
-            5,
+            6,
             0
         ],
         "min_engine_version": [
@@ -21,7 +21,7 @@
             "uuid" : "f7e2ed38-408a-4c89-a6ed-3bf4ef59413b",
             "version": [
                 2,
-                5,
+                6,
                 0
             ]
         }
