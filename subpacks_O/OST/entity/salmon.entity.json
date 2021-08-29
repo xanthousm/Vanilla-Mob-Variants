@@ -1,0 +1,62 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:salmon",
+      "materials": {
+        "default": "salmon"
+      },
+      "textures": {
+        "default": "textures/entity/fish/salmon",
+        "default2": "textures/entity/salmon/v/salmon10",
+        "default3": "textures/entity/salmon/v/salmon2",
+        "default4": "textures/entity/salmon/v/salmon3",
+        "default5": "textures/entity/salmon/v/salmon4",
+        "default6": "textures/entity/salmon/v/salmon5",
+        "default7": "textures/entity/salmon/v/salmon6",
+        "default8": "textures/entity/salmon/v/salmon7",
+        "default9": "textures/entity/salmon/v/salmon8",
+        "default10": "textures/entity/salmon/v/salmon9",
+        "default11": "textures/entity/salmon/c/salmon10",
+        "default12": "textures/entity/salmon/c/salmon2",
+        "default13": "textures/entity/salmon/c/salmon3",
+        "default14": "textures/entity/salmon/c/salmon4",
+        "default15": "textures/entity/salmon/c/salmon5",
+        "default16": "textures/entity/salmon/c/salmon6",
+        "default17": "textures/entity/salmon/c/salmon7",
+        "default18": "textures/entity/salmon/c/salmon8",
+        "default19": "textures/entity/salmon/c/salmon9",
+        "Koi": "textures/entity/salmon/n/Koi"
+      },
+      "geometry": {
+        "default": "geometry.salmon"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);",
+          "variable.Nvar = 0.5;",
+          "variable.Avar = 0;",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)"
+      },
+      "animations": {
+        "flop": "animation.salmon.flop",
+        "swim": "animation.salmon.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.fish.general"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.salmon_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 47
+      }
+    }
+  }
+}

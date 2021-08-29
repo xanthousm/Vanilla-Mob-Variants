@@ -1,1 +1,64 @@
-{"format_version": "1.8.0", "minecraft:client_entity": {"description": {"identifier": "minecraft:witch", "materials": {"default": "witch"}, "textures": {"default": "textures/entity/witch", "default2": "textures/entity/witch/v/witch10", "default3": "textures/entity/witch/v/witch2", "default4": "textures/entity/witch/v/witch3", "default5": "textures/entity/witch/v/witch4", "default6": "textures/entity/witch/v/witch5", "default7": "textures/entity/witch/v/witch6", "default8": "textures/entity/witch/v/witch7", "default9": "textures/entity/witch/v/witch8", "default10": "textures/entity/witch/v/witch9", "default11": "textures/entity/witch/c/witch10", "default12": "textures/entity/witch/c/witch2", "default13": "textures/entity/witch/c/witch3", "default14": "textures/entity/witch/c/witch4", "default15": "textures/entity/witch/c/witch5", "default16": "textures/entity/witch/c/witch6", "default17": "textures/entity/witch/c/witch7", "default18": "textures/entity/witch/c/witch8", "default19": "textures/entity/witch/c/witch9"}, "geometry": {"default": "geometry.villager.witch"}, "scripts": {"scale": "0.9375*(0.95+0.11*variable.Nvar)", "pre_animation": ["variable.Nvar = query.anim_time>0 ? variable.Nvar : Math.random(-1,1);", "variable.Avar = query.anim_time>0 ? variable.Avar : Math.random(-20,20);", "variable.Xvar = query.anim_time>0 ? variable.Xvar : Math.random(0,999);"]}, "animations": {"villager_general": "animation.villager.general.v1.0", "look_at_target": "animation.common.look_at_target", "move": "animation.villager.move", "general": "animation.witch.general"}, "animation_controllers": [{"general": "controller.animation.witch.general"}, {"move": "controller.animation.villager.move"}], "render_controllers": ["controller.render.witch.v1.0"], "spawn_egg": {"texture": "spawn_egg", "texture_index": 17}}}}
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:witch",
+      "materials": {
+        "default": "witch"
+      },
+      "textures": {
+        "default": "textures/entity/witch",
+        "default2": "textures/entity/witch/v/witch10",
+        "default3": "textures/entity/witch/v/witch2",
+        "default4": "textures/entity/witch/v/witch3",
+        "default5": "textures/entity/witch/v/witch4",
+        "default6": "textures/entity/witch/v/witch5",
+        "default7": "textures/entity/witch/v/witch6",
+        "default8": "textures/entity/witch/v/witch7",
+        "default9": "textures/entity/witch/v/witch8",
+        "default10": "textures/entity/witch/v/witch9",
+        "default11": "textures/entity/witch/c/witch10",
+        "default12": "textures/entity/witch/c/witch2",
+        "default13": "textures/entity/witch/c/witch3",
+        "default14": "textures/entity/witch/c/witch4",
+        "default15": "textures/entity/witch/c/witch5",
+        "default16": "textures/entity/witch/c/witch6",
+        "default17": "textures/entity/witch/c/witch7",
+        "default18": "textures/entity/witch/c/witch8",
+        "default19": "textures/entity/witch/c/witch9"
+      },
+      "geometry": {
+        "default": "geometry.villager.witch"
+      },
+      "scripts": {
+        "scale": "0.9375*(0.95+0.1*variable.Nvar)",
+        "pre_animation": [
+          "variable.Nvar =(variable.Nvar ?? Math.random(-1,1));",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ]
+      },
+      "animations": {
+        "villager_general": "animation.villager.general.v1.0",
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.villager.move",
+        "general": "animation.witch.general"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.witch.general"
+        },
+        {
+          "move": "controller.animation.villager.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.witch.v1.0_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 17
+      }
+    }
+  }
+}

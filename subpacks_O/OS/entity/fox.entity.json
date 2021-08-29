@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:fox",
+      "materials": {
+        "default": "fox"
+      },
+      "textures": {
+        "red": "textures/entity/fox/fox",
+        "arctic": "textures/entity/fox/arctic_fox"
+      },
+      "geometry": {
+        "default": "geometry.fox"
+      },
+      "animations": {
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.fox.baby_transform",
+        "crouch": "animation.fox.crouch",
+        "sleep": "animation.fox.sleep",
+        "setup": "animation.fox.setup",
+        "sit": "animation.fox.sit",
+        "wiggle": "animation.fox.wiggle",
+        "stuck": "animation.fox.stuck",
+        "pounce": "animation.fox.pounce",
+        "move": "controller.animation.fox.move"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          {
+            "baby_transform": "query.is_baby"
+          },
+          "move"
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)",
+        "initialize": [
+          "variable.Nvar = 0.5;",
+          "variable.Avar = Math.random(-20,20);",
+          "variable.Xvar = Math.random(0,999);"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.fox_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 55
+      }
+    }
+  }
+}

@@ -1,1 +1,68 @@
-{"format_version": "1.8.0", "minecraft:client_entity": {"description": {"identifier": "minecraft:vindicator", "materials": {"default": "vindicator"}, "textures": {"default": "textures/entity/vindicator", "default2": "textures/entity/vindicator/v/vindicator10", "default3": "textures/entity/vindicator/v/vindicator2", "default4": "textures/entity/vindicator/v/vindicator3", "default5": "textures/entity/vindicator/v/vindicator4", "default6": "textures/entity/vindicator/v/vindicator5", "default7": "textures/entity/vindicator/v/vindicator6", "default8": "textures/entity/vindicator/v/vindicator7", "default9": "textures/entity/vindicator/v/vindicator8", "default10": "textures/entity/vindicator/v/vindicator9", "default11": "textures/entity/vindicator/cv/vindicator2", "default12": "textures/entity/vindicator/c/vindicator10", "default13": "textures/entity/vindicator/c/vindicator2", "default14": "textures/entity/vindicator/c/vindicator3", "default15": "textures/entity/vindicator/c/vindicator4", "default16": "textures/entity/vindicator/c/vindicator5", "default17": "textures/entity/vindicator/c/vindicator6", "default18": "textures/entity/vindicator/c/vindicator7", "default19": "textures/entity/vindicator/c/vindicator8", "default20": "textures/entity/vindicator/c/vindicator9"}, "geometry": {"default": "geometry.vindicator"}, "scripts": {"scale": "0.9375*(0.95+0.11*variable.Nvar)", "pre_animation": ["variable.Nvar = query.anim_time>0 ? variable.Nvar : Math.random(-1,1);", "variable.Avar = query.anim_time>0 ? variable.Avar : Math.random(-20,20);", "variable.Xvar = query.anim_time>0 ? variable.Xvar : Math.random(0,999);"]}, "animations": {"look_at_target_default": "animation.humanoid.look_at_target.default.v1.0", "look_at_target_gliding": "animation.humanoid.look_at_target.gliding.v1.0", "look_at_target_swimming": "animation.humanoid.look_at_target.swimming.v1.0", "vindicator_base": "animation.vindicator.base", "vindicator_attack": "animation.vindicator.attack", "vindicator_walk": "animation.vindicator.walk"}, "animation_controllers": [{"look_at_target": "controller.animation.humanoid.look_at_target"}, {"vindicator_base": "controller.animation.vindicator.base.v1.0"}], "render_controllers": ["controller.render.vindicator"], "enable_attachables": true, "spawn_egg": {"texture": "spawn_egg", "texture_index": 39}}}}
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:vindicator",
+      "materials": {
+        "default": "vindicator"
+      },
+      "textures": {
+        "default": "textures/entity/vindicator",
+        "default2": "textures/entity/vindicator/v/vindicator10",
+        "default3": "textures/entity/vindicator/v/vindicator2",
+        "default4": "textures/entity/vindicator/v/vindicator3",
+        "default5": "textures/entity/vindicator/v/vindicator4",
+        "default6": "textures/entity/vindicator/v/vindicator5",
+        "default7": "textures/entity/vindicator/v/vindicator6",
+        "default8": "textures/entity/vindicator/v/vindicator7",
+        "default9": "textures/entity/vindicator/v/vindicator8",
+        "default10": "textures/entity/vindicator/v/vindicator9",
+        "default11": "textures/entity/vindicator/cv/vindicator2",
+        "default12": "textures/entity/vindicator/c/vindicator10",
+        "default13": "textures/entity/vindicator/c/vindicator2",
+        "default14": "textures/entity/vindicator/c/vindicator3",
+        "default15": "textures/entity/vindicator/c/vindicator4",
+        "default16": "textures/entity/vindicator/c/vindicator5",
+        "default17": "textures/entity/vindicator/c/vindicator6",
+        "default18": "textures/entity/vindicator/c/vindicator7",
+        "default19": "textures/entity/vindicator/c/vindicator8",
+        "default20": "textures/entity/vindicator/c/vindicator9"
+      },
+      "geometry": {
+        "default": "geometry.vindicator"
+      },
+      "scripts": {
+        "scale": "0.9375*(0.95+0.1*variable.Nvar)",
+        "pre_animation": [
+          "variable.Nvar =(variable.Nvar ?? Math.random(-1,1));",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ]
+      },
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default.v1.0",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding.v1.0",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming.v1.0",
+        "vindicator_base": "animation.vindicator.base",
+        "vindicator_attack": "animation.vindicator.attack",
+        "vindicator_walk": "animation.vindicator.walk"
+      },
+      "animation_controllers": [
+        {
+          "look_at_target": "controller.animation.humanoid.look_at_target"
+        },
+        {
+          "vindicator_base": "controller.animation.vindicator.base.v1.0"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.vindicator_x"
+      ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 39
+      }
+    }
+  }
+}

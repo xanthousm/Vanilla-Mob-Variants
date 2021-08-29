@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.hoglin_x": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.Xskins[variable.Xvar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:snow_golem",
+      "materials": {
+        "default": "entity_alphatest",
+        "head": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/snow_golem",
+        "default2": "textures/entity/snow_golem/v/snow_golem10",
+        "default3": "textures/entity/snow_golem/v/snow_golem2",
+        "default4": "textures/entity/snow_golem/v/snow_golem3",
+        "default5": "textures/entity/snow_golem/v/snow_golem4",
+        "default6": "textures/entity/snow_golem/v/snow_golem5",
+        "default7": "textures/entity/snow_golem/v/snow_golem6",
+        "default8": "textures/entity/snow_golem/v/snow_golem7",
+        "default9": "textures/entity/snow_golem/v/snow_golem8",
+        "default10": "textures/entity/snow_golem/v/snow_golem9",
+        "default11": "textures/entity/snow_golem/cv/snow-golem10",
+        "default12": "textures/entity/snow_golem/cv/snow_golem2",
+        "default13": "textures/entity/snow_golem/cv/snow_golem3",
+        "default14": "textures/entity/snow_golem/cv/Snow_Golem4",
+        "default15": "textures/entity/snow_golem/cv/Snow_Golem5",
+        "default16": "textures/entity/snow_golem/cv/Snow_Golem6",
+        "default17": "textures/entity/snow_golem/cv/Snow_Golem7",
+        "default18": "textures/entity/snow_golem/cv/Snow_Golem8",
+        "default19": "textures/entity/snow_golem/cv/Snow_Golem9",
+        "default20": "textures/entity/snow_golem/c/snow_golem10",
+        "default21": "textures/entity/snow_golem/c/snow_golem2",
+        "default22": "textures/entity/snow_golem/c/snow_golem3",
+        "default23": "textures/entity/snow_golem/c/snow_golem4",
+        "default24": "textures/entity/snow_golem/c/snow_golem5",
+        "default25": "textures/entity/snow_golem/c/snow_golem6",
+        "default26": "textures/entity/snow_golem/c/snow_golem7",
+        "default27": "textures/entity/snow_golem/c/snow_golem8",
+        "default28": "textures/entity/snow_golem/c/snow_golem9",
+        "Frank": "textures/entity/snow_golem/n/Frank"
+      },
+      "geometry": {
+        "default": "geometry.snowgolem"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 20;",
+          "variable.Nvar = 0.5;",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)"
+      },
+      "animations": {
+        "move": "animation.snowgolem.move",
+        "arms": "animation.snowgolem.arms",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.snowgolem.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.snowgolem_x"
+      ]
+    }
+  }
+}

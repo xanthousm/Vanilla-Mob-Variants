@@ -1,0 +1,79 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:turtle",
+      "materials": {
+        "default": "turtle"
+      },
+      "textures": {
+        "default": "textures/entity/sea_turtle",
+        "default2": "textures/entity/turtle/v/sea_turtle10",
+        "default3": "textures/entity/turtle/v/sea_turtle2",
+        "default4": "textures/entity/turtle/v/sea_turtle3",
+        "default5": "textures/entity/turtle/v/sea_turtle4",
+        "default6": "textures/entity/turtle/v/sea_turtle5",
+        "default7": "textures/entity/turtle/v/sea_turtle6",
+        "default8": "textures/entity/turtle/v/sea_turtle7",
+        "default9": "textures/entity/turtle/v/sea_turtle8",
+        "default10": "textures/entity/turtle/v/sea_turtle9",
+        "default11": "textures/entity/turtle/cv/sea_turtle2",
+        "default12": "textures/entity/turtle/cv/sea_turtle3",
+        "default13": "textures/entity/turtle/cv/sea_turtle4",
+        "default14": "textures/entity/turtle/cv/sea_turtle5",
+        "default15": "textures/entity/turtle/cv/sea_turtle6",
+        "default16": "textures/entity/turtle/cv/Sea_Turtle7",
+        "default17": "textures/entity/turtle/cu/sea_turtle2",
+        "default18": "textures/entity/turtle/cu/Sea_Turtle3",
+        "default19": "textures/entity/turtle/cu/sea_turtle4",
+        "default20": "textures/entity/turtle/cu/sea_turtle5",
+        "default21": "textures/entity/turtle/cu/sea_turtle6",
+        "default22": "textures/entity/turtle/c/sea_turtle10",
+        "default23": "textures/entity/turtle/c/sea_turtle2",
+        "default24": "textures/entity/turtle/c/sea_turtle3",
+        "default25": "textures/entity/turtle/c/sea_turtle4",
+        "default26": "textures/entity/turtle/c/sea_turtle5",
+        "default27": "textures/entity/turtle/c/sea_turtle6",
+        "default28": "textures/entity/turtle/c/sea_turtle7",
+        "default29": "textures/entity/turtle/c/sea_turtle8",
+        "default30": "textures/entity/turtle/c/sea_turtle9"
+      },
+      "geometry": {
+        "default": "geometry.turtle"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.timeMultiplier = query.has_rider ? 0.39972 : 1.0;",
+          "variable.backLegMultiplier = query.has_rider ? 0.5 : 3.0;",
+          "variable.frontLegMultiplier = query.has_rider ? 2.0 : 8.0;",
+          "variable.legSpeedMultiplier = query.has_rider ? 2.0 : 5.0;",
+          "variable.Nvar = 0.5;",
+          "variable.Avar = 0;",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ],
+        "scale": "1.2*(0.95+0.1*variable.Nvar)"
+      },
+      "animations": {
+        "general": "animation.turtle.general",
+        "move": "animation.turtle.move",
+        "ground_move": "animation.turtle.ground_move",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.turtle.general"
+        },
+        {
+          "move": "controller.animation.turtle.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.turtle_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 50
+      }
+    }
+  }
+}

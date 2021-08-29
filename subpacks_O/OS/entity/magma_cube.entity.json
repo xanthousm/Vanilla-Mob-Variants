@@ -1,0 +1,66 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:magma_cube",
+      "materials": {
+        "default": "magma_cube"
+      },
+      "textures": {
+        "default": "textures/entity/slime/magmacube",
+        "default2": "textures/entity/magma_cube/v/magmacube10",
+        "default3": "textures/entity/magma_cube/v/magmacube2",
+        "default4": "textures/entity/magma_cube/v/magmacube3",
+        "default5": "textures/entity/magma_cube/v/magmacube4",
+        "default6": "textures/entity/magma_cube/v/magmacube5",
+        "default7": "textures/entity/magma_cube/v/magmacube6",
+        "default8": "textures/entity/magma_cube/v/magmacube7",
+        "default9": "textures/entity/magma_cube/v/magmacube8",
+        "default10": "textures/entity/magma_cube/v/magmacube9",
+        "default11": "textures/entity/magma_cube/cv/magma_cube2",
+        "default12": "textures/entity/magma_cube/c/magmacube10",
+        "default13": "textures/entity/magma_cube/c/magmacube2",
+        "default14": "textures/entity/magma_cube/c/magmacube3",
+        "default15": "textures/entity/magma_cube/c/magmacube4",
+        "default16": "textures/entity/magma_cube/c/magmacube5",
+        "default17": "textures/entity/magma_cube/c/magmacube6",
+        "default18": "textures/entity/magma_cube/c/magmacube7",
+        "default19": "textures/entity/magma_cube/c/magmacube8",
+        "default20": "textures/entity/magma_cube/c/magmacube9"
+      },
+      "geometry": {
+        "default": "geometry.lavaslime"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.slime_squish_factor = (query.previous_squish_value + (query.current_squish_value - query.previous_squish_value) * query.frame_alpha);",
+          "variable.bounce = 1 / ((variable.slime_squish_factor / (query.variant * 0.5 + 1)) + 1);",
+          "variable.horizontal_scale_amount = variable.bounce * query.variant;",
+          "variable.vertical_scale_amount = (1 / variable.bounce) * query.variant;",
+          "variable.Nvar = 0.5;",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ],
+        "scaleX": "variable.horizontal_scale_amount",
+        "scaleY": "variable.vertical_scale_amount",
+        "scaleZ": "variable.horizontal_scale_amount",
+        "scale": "variable.vertical_scale_amount*(0.95+0.1*variable.Nvar)"
+      },
+      "animations": {
+        "move": "animation.magma_cube.move"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.magma_cube.general"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.magma_cube_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 20
+      }
+    }
+  }
+}

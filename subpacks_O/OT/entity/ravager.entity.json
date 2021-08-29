@@ -1,0 +1,73 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:ravager",
+      "textures": {
+        "default": "textures/entity/illager/ravager",
+        "default2": "textures/entity/ravager/v/ravager10",
+        "default3": "textures/entity/ravager/v/ravager2",
+        "default4": "textures/entity/ravager/v/ravager3",
+        "default5": "textures/entity/ravager/v/ravager4",
+        "default6": "textures/entity/ravager/v/ravager5",
+        "default7": "textures/entity/ravager/v/ravager6",
+        "default8": "textures/entity/ravager/v/ravager7",
+        "default9": "textures/entity/ravager/v/ravager8",
+        "default10": "textures/entity/ravager/v/ravager9",
+        "default11": "textures/entity/ravager/cv/ravager2",
+        "default12": "textures/entity/ravager/c/ravager10",
+        "default13": "textures/entity/ravager/c/ravager2",
+        "default14": "textures/entity/ravager/c/ravager3",
+        "default15": "textures/entity/ravager/c/ravager4",
+        "default16": "textures/entity/ravager/c/ravager5",
+        "default17": "textures/entity/ravager/c/ravager6",
+        "default18": "textures/entity/ravager/c/ravager7",
+        "default19": "textures/entity/ravager/c/ravager8",
+        "default20": "textures/entity/ravager/c/ravager9"
+      },
+      "materials": {
+        "default": "ravager"
+      },
+      "geometry": {
+        "default": "geometry.ravager"
+      },
+      "render_controllers": [
+        "controller.render.ravager_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 57
+      },
+      "animations": {
+        "walk": "animation.ravager.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "idle_mouth": "animation.ravager.idle_mouth",
+        "stunned": "animation.ravager.stunned",
+        "roaring": "animation.ravager.roaring",
+        "move": "controller.animation.ravager.move",
+        "head": "controller.animation.ravager.head_movement",
+        "biting": "animation.ravager.biting"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.roar_length = 1.0;",
+          "variable.bite_anim_duration = 0.75f;",
+          "variable.bite_neck_length = 10;"
+        ],
+        "animate": [
+          "move",
+          "head"
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)",
+        "initialize": [
+          "variable.Nvar = Math.random(-1,1);",
+          "variable.Avar =0;",
+          "variable.Xvar = Math.random(0,999);"
+        ]
+      },
+      "particle_effects": {
+        "stun_particles": "minecraft:stunned_emitter"
+      }
+    }
+  }
+}

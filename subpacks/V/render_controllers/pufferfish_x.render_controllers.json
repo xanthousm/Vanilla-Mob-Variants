@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.pufferfish.small_x": {
+      "geometry": "geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.Xskins[variable.Xvar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default"
+          ]
+        }
+      }
+    },
+    "controller.render.pufferfish.medium_x": {
+      "geometry": "geometry.mid",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.Xskins[variable.Xvar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default"
+          ]
+        }
+      }
+    },
+    "controller.render.pufferfish.large_x": {
+      "geometry": "geometry.large",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.Xskins[variable.Xvar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default"
+          ]
+        }
+      }
+    }
+  }
+}

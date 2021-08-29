@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.creeper_x": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "query.get_name == 'Reddit' ? Texture.Reddit : (Array.Xskins[variable.Xvar])"
+      ],
+      "overlay_color": {
+        "r": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+        "g": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+        "b": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+        "a": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default",
+            "Texture.default2",
+            "Texture.default3",
+            "Texture.default4",
+            "Texture.default5",
+            "Texture.default6",
+            "Texture.default7",
+            "Texture.default8",
+            "Texture.default9",
+            "Texture.default10"
+          ]
+        }
+      }
+    }
+  }
+}

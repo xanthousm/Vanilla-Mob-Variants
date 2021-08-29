@@ -1,0 +1,89 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:guardian",
+      "materials": {
+        "default": "guardian",
+        "ghost": "guardian_ghost"
+      },
+      "textures": {
+        "default": "textures/entity/guardian",
+        "elder": "textures/entity/guardian_elder",
+        "beam": "textures/entity/guardian_beam",
+        "default2": "textures/entity/guardian/v/guardian10",
+        "default3": "textures/entity/guardian/v/guardian2",
+        "default4": "textures/entity/guardian/v/guardian3",
+        "default5": "textures/entity/guardian/v/guardian4",
+        "default6": "textures/entity/guardian/v/guardian5",
+        "default7": "textures/entity/guardian/v/guardian6",
+        "default8": "textures/entity/guardian/v/guardian7",
+        "default9": "textures/entity/guardian/v/guardian8",
+        "default10": "textures/entity/guardian/v/guardian9",
+        "default11": "textures/entity/guardian/cv/guardian2",
+        "default12": "textures/entity/guardian/cv/guardian3",
+        "default13": "textures/entity/guardian/cv/guardian4",
+        "default14": "textures/entity/guardian/cv/guardian5",
+        "default15": "textures/entity/guardian/cv/guardian6",
+        "default16": "textures/entity/guardian/cv/guardian7",
+        "default17": "textures/entity/guardian/cu/guardian2",
+        "default18": "textures/entity/guardian/cu/guardian3",
+        "default19": "textures/entity/guardian/cu/guardian4",
+        "default20": "textures/entity/guardian/cu/guardian5",
+        "default21": "textures/entity/guardian/cu/guardian6",
+        "default22": "textures/entity/guardian/cu/guardian7",
+        "default23": "textures/entity/guardian/cu/guardian8",
+        "default24": "textures/entity/guardian/c/guardian10",
+        "default25": "textures/entity/guardian/c/guardian2",
+        "default26": "textures/entity/guardian/c/guardian3",
+        "default27": "textures/entity/guardian/c/guardian4",
+        "default28": "textures/entity/guardian/c/guardian5",
+        "default29": "textures/entity/guardian/c/guardian6",
+        "default30": "textures/entity/guardian/c/guardian7",
+        "default31": "textures/entity/guardian/c/guardian8",
+        "default32": "textures/entity/guardian/c/guardian9"
+      },
+      "geometry": {
+        "default": "geometry.guardian",
+        "ghost": "geometry.guardian"
+      },
+      "animations": {
+        "setup": "animation.guardian.setup",
+        "spikes": "animation.guardian.spikes.v1.0",
+        "swim": "animation.guardian.swim",
+        "look_at_target": "animation.common.look_at_target",
+        "move_eye": "animation.guardian.move_eye.v1.0"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.spike_shake = Math.sin(query.life_time * 2000)/50;",
+          "variable.spike_animation_speed = query.life_time < 0.1 ? 0.0 : (!query.is_in_water ? (Math.round(Math.sin(query.life_time * 2000)) == 0.0 ? (Math.random(0.0, 1.0)) : (variable.spike_animation_speed)) : (query.is_moving ? (variable.spike_animation_speed - variable.spike_animation_speed * 0.06) : (variable.spike_animation_speed + (1.0 - variable.spike_animation_speed) * 0.06)));",
+          "variable.spike_extension = (1.0 - variable.spike_animation_speed) * 0.55;",
+          "variable.tail_animation_speed = query.life_time < 0.1 ? 0.0 : (!query.is_in_water ? 2.0 : query.is_moving ? (variable.tail_animation_speed < 0.5 ? 4.0 : variable.tail_animation_speed + (0.5 - variable.tail_animation_speed) * 0.1) : variable.tail_animation_speed + (0.125 - variable.tail_animation_speed) * 0.2);",
+          "variable.tail_swim = query.life_time < 0.1 ? 0.0 : (variable.tail_swim + variable.tail_animation_speed);",
+          "variable.tail_base_angle = Math.sin(variable.tail_swim*20.0);"
+        ],
+        "animate": [
+          "setup",
+          "spikes",
+          "swim",
+          "look_at_target",
+          "move_eye"
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)",
+        "initialize": [
+          "variable.Nvar = Math.random(-1,1);",
+          "variable.Avar =0;",
+          "variable.Xvar = Math.random(0,999);"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.guardian_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 26
+      }
+    }
+  }
+}

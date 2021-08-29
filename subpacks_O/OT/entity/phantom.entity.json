@@ -1,0 +1,70 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:phantom",
+      "materials": {
+        "default": "phantom",
+        "invisible": "phantom_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/phantom",
+        "default2": "textures/entity/phantom/v/phantom10",
+        "default3": "textures/entity/phantom/v/phantom2",
+        "default4": "textures/entity/phantom/v/phantom3",
+        "default5": "textures/entity/phantom/v/phantom4",
+        "default6": "textures/entity/phantom/v/phantom5",
+        "default7": "textures/entity/phantom/v/phantom6",
+        "default8": "textures/entity/phantom/v/phantom7",
+        "default9": "textures/entity/phantom/v/phantom8",
+        "default10": "textures/entity/phantom/v/phantom9",
+        "default11": "textures/entity/phantom/cv/phantom2",
+        "default12": "textures/entity/phantom/cv/phantom3",
+        "default13": "textures/entity/phantom/c/phantom10",
+        "default14": "textures/entity/phantom/c/phantom2",
+        "default15": "textures/entity/phantom/c/phantom3",
+        "default16": "textures/entity/phantom/c/phantom4",
+        "default17": "textures/entity/phantom/c/phantom5",
+        "default18": "textures/entity/phantom/c/phantom6",
+        "default19": "textures/entity/phantom/c/phantom7",
+        "default20": "textures/entity/phantom/c/phantom8",
+        "default21": "textures/entity/phantom/c/phantom9"
+      },
+      "geometry": {
+        "default": "geometry.phantom"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.wingRotZ = 16.0 * Math.sin((variable.RuntimeID * 3 + query.life_time * 20.0) * 7.448454);",
+          "variable.tailRotX = -5.0 * Math.sin((variable.RuntimeID * 3 + query.life_time * 20.0) * 14.896908) - 5.0;",
+          "variable.Nvar =(variable.Nvar ?? Math.random(-1,1));",
+          "variable.Avar = 0;",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)"
+      },
+      "animations": {
+        "phantom_base_pose": "animation.phantom.base_pose",
+        "move": "animation.phantom.move"
+      },
+      "animation_controllers": [
+        {
+          "phantom_base_pose": "controller.animation.phantom.base_pose"
+        },
+        {
+          "move": "controller.animation.phantom.move"
+        }
+      ],
+      "particle_effects": {
+        "wing_dust": "minecraft:phantom_trail_particle"
+      },
+      "render_controllers": [
+        "controller.render.phantom_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 51
+      }
+    }
+  }
+}

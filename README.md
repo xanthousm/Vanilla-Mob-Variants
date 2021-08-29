@@ -36,3 +36,4 @@ Control the kinds of variants you see by clicking on the pack's gear icon in the
 - Tamed and named mobs do not have persistant textures
 - Saddled pigs/striders permenantly revert to the original texture
 - Wolves temporarily revert to the original texture when angry
+- Various bugs can occur when used with old resource packs/worlds that have not been updated to 1.16 or higher (eg: invisible zombie pigmen)

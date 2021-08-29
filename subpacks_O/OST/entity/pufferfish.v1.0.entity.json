@@ -1,0 +1,72 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:pufferfish",
+      "materials": {
+        "default": "pufferfish"
+      },
+      "textures": {
+        "default": "textures/entity/fish/pufferfish",
+        "default2": "textures/entity/pufferfish/v/pufferfish10",
+        "default3": "textures/entity/pufferfish/v/pufferfish2",
+        "default4": "textures/entity/pufferfish/v/pufferfish3",
+        "default5": "textures/entity/pufferfish/v/pufferfish4",
+        "default6": "textures/entity/pufferfish/v/pufferfish5",
+        "default7": "textures/entity/pufferfish/v/pufferfish6",
+        "default8": "textures/entity/pufferfish/v/pufferfish7",
+        "default9": "textures/entity/pufferfish/v/pufferfish8",
+        "default10": "textures/entity/pufferfish/v/pufferfish9",
+        "default11": "textures/entity/pufferfish/c/pufferfish10",
+        "default12": "textures/entity/pufferfish/c/pufferfish2",
+        "default13": "textures/entity/pufferfish/c/pufferfish3",
+        "default14": "textures/entity/pufferfish/c/pufferfish4",
+        "default15": "textures/entity/pufferfish/c/pufferfish5",
+        "default16": "textures/entity/pufferfish/c/pufferfish6",
+        "default17": "textures/entity/pufferfish/c/pufferfish7",
+        "default18": "textures/entity/pufferfish/c/pufferfish8",
+        "default19": "textures/entity/pufferfish/c/pufferfish9"
+      },
+      "geometry": {
+        "default": "geometry.pufferfish.small",
+        "mid": "geometry.pufferfish.mid",
+        "large": "geometry.pufferfish.large"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.ZRot = !query.is_in_water ? Math.cos(query.time_stamp * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend = Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+        ],
+        "animate": [
+          "general"
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)",
+        "initialize": [
+          "variable.Nvar = 0.5;",
+          "variable.Avar =0;",
+          "variable.Xvar = Math.random(0,999);"
+        ]
+      },
+      "animations": {
+        "flop": "animation.pufferfish.flop",
+        "swim": "animation.pufferfish.swim",
+        "general": "controller.animation.fish.general"
+      },
+      "render_controllers": [
+        {
+          "controller.render.pufferfish.small_x": "query.variant == 0"
+        },
+        {
+          "controller.render.pufferfish.medium_x": "query.variant == 1"
+        },
+        {
+          "controller.render.pufferfish.large_x": "query.variant == 2"
+        }
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 46
+      }
+    }
+  }
+}

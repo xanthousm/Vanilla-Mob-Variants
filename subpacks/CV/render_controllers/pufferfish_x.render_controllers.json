@@ -1,0 +1,104 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.pufferfish.small_x": {
+      "geometry": "geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.Xskins[variable.Xvar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default",
+            "Texture.default2",
+            "Texture.default3",
+            "Texture.default4",
+            "Texture.default5",
+            "Texture.default6",
+            "Texture.default7",
+            "Texture.default8",
+            "Texture.default9",
+            "Texture.default10"
+          ]
+        }
+      }
+    },
+    "controller.render.pufferfish.medium_x": {
+      "geometry": "geometry.mid",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.Xskins[variable.Xvar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default",
+            "Texture.default2",
+            "Texture.default3",
+            "Texture.default4",
+            "Texture.default5",
+            "Texture.default6",
+            "Texture.default7",
+            "Texture.default8",
+            "Texture.default9",
+            "Texture.default10"
+          ]
+        }
+      }
+    },
+    "controller.render.pufferfish.large_x": {
+      "geometry": "geometry.large",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.Xskins[variable.Xvar]"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default",
+            "Texture.default2",
+            "Texture.default3",
+            "Texture.default4",
+            "Texture.default5",
+            "Texture.default6",
+            "Texture.default7",
+            "Texture.default8",
+            "Texture.default9",
+            "Texture.default10"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:slime",
+      "materials": {
+        "default": "slime",
+        "outer": "slime_outer"
+      },
+      "textures": {
+        "default": "textures/entity/slime/slime",
+        "default2": "textures/entity/slime/v/slime10",
+        "default3": "textures/entity/slime/v/slime2",
+        "default4": "textures/entity/slime/v/slime3",
+        "default5": "textures/entity/slime/v/slime4",
+        "default6": "textures/entity/slime/v/slime5",
+        "default7": "textures/entity/slime/v/slime6",
+        "default8": "textures/entity/slime/v/slime7",
+        "default9": "textures/entity/slime/v/slime8",
+        "default10": "textures/entity/slime/v/slime9",
+        "default11": "textures/entity/slime/cv/slime2",
+        "default12": "textures/entity/slime/cv/slime3",
+        "default13": "textures/entity/slime/cv/slime4",
+        "default14": "textures/entity/slime/cv/slime5",
+        "default15": "textures/entity/slime/cv/slime6",
+        "default16": "textures/entity/slime/cv/slime7",
+        "default17": "textures/entity/slime/cv/slime8",
+        "default18": "textures/entity/slime/c/slime10",
+        "default19": "textures/entity/slime/c/slime2",
+        "default20": "textures/entity/slime/c/slime3",
+        "default21": "textures/entity/slime/c/slime4",
+        "default22": "textures/entity/slime/c/slime5",
+        "default23": "textures/entity/slime/c/slime6",
+        "default24": "textures/entity/slime/c/slime7",
+        "default25": "textures/entity/slime/c/slime8",
+        "default26": "textures/entity/slime/c/slime9",
+        "Fishy": "textures/entity/slime/n/Fishy",
+        "Honey": "textures/entity/slime/n/Honey"
+      },
+      "geometry": {
+        "default": "geometry.slime",
+        "armor": "geometry.slime.armor"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.squish_factor = (query.previous_squish_value + (query.current_squish_value - query.previous_squish_value) * query.frame_alpha);",
+          "variable.bounce = 1 / ((variable.squish_factor / (query.variant * 0.5 + 1)) + 1);",
+          "variable.horizontal_scale_amount = variable.bounce * query.variant;",
+          "variable.vertical_scale_amount = (1 / variable.bounce) * query.variant;",
+          "variable.Nvar = 0.5;",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ],
+        "scaleX": "variable.horizontal_scale_amount",
+        "scaleY": "variable.vertical_scale_amount",
+        "scaleZ": "variable.horizontal_scale_amount",
+        "scale": "variable.vertical_scale_amount*(0.95+0.1*variable.Nvar)"
+      },
+      "render_controllers": [
+        "controller.render.slime_x",
+        "controller.render.slime_armor_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 10
+      },
+      "animations": {
+        "move": "animation.slime.move"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.magma_cube.general"
+        }
+      ]
+    }
+  }
+}

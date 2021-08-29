@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:sheep",
+      "materials": {
+        "default": "sheep"
+      },
+      "textures": {
+        "default": "textures/entity/sheep/sheep",
+        "default2": "textures/entity/sheep/v/sheep10",
+        "default3": "textures/entity/sheep/v/sheep2",
+        "default4": "textures/entity/sheep/v/sheep3",
+        "default5": "textures/entity/sheep/v/sheep4",
+        "default6": "textures/entity/sheep/v/sheep5",
+        "default7": "textures/entity/sheep/v/sheep6",
+        "default8": "textures/entity/sheep/v/sheep7",
+        "default9": "textures/entity/sheep/v/sheep8",
+        "default10": "textures/entity/sheep/v/sheep9",
+        "default11": "textures/entity/sheep/c/sheep10",
+        "default12": "textures/entity/sheep/c/sheep2",
+        "default13": "textures/entity/sheep/c/sheep3",
+        "default14": "textures/entity/sheep/c/sheep4",
+        "default15": "textures/entity/sheep/c/sheep5",
+        "default16": "textures/entity/sheep/c/sheep6",
+        "default17": "textures/entity/sheep/c/sheep7",
+        "default18": "textures/entity/sheep/c/sheep8",
+        "default19": "textures/entity/sheep/c/sheep9"
+      },
+      "geometry": {
+        "default": "geometry.sheep",
+        "sheared": "geometry.sheep.sheared"
+      },
+      "particle_emitters": {
+        "flame": "animation.blaze.flame"
+      },
+      "animations": {
+        "setup": "animation.sheep.setup",
+        "grazing": "animation.sheep.grazing",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.sheep.baby_transform",
+        "move": "controller.animation.sheep.move"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          "look_at_target",
+          "move",
+          {
+            "baby_transform": "query.is_baby"
+          }
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)",
+        "initialize": [
+          "variable.Nvar = 0.5;",
+          "variable.Avar =0;",
+          "variable.Xvar = Math.random(0,999);"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.sheep_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 3
+      }
+    }
+  }
+}

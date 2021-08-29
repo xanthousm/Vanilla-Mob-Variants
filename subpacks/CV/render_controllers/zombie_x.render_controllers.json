@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.zombie_x": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "query.get_name == 'Fin' ? Texture.Fin : (query.get_name == 'Ira' ? Texture.Ira : (query.get_name == 'Joseph' ? Texture.Joseph : (query.get_name == 'Kibbee' ? Texture.Kibbee : (query.get_name == 'Lucas' ? Texture.Lucas : (query.get_name == 'Mine' ? Texture.Mine : (query.get_name == 'Neon' ? Texture.Neon : (query.get_name == 'Nest' ? Texture.Nest : (query.get_name == 'Niko' ? Texture.Niko : (query.get_name == 'Odin' ? Texture.Odin : (query.get_name == 'Severus' ? Texture.Severus : (query.get_name == 'Sheet' ? Texture.Sheet : (query.get_name == 'Soul' ? Texture.Soul : (query.get_name == 'Tax' ? Texture.Tax : (query.get_name == 'Xan' ? Texture.Xan : (Array.Xskins[variable.Xvar])))))))))))))))"
+      ],
+      "overlay_color": {
+        "r": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "g": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "b": "(variable.Avar>0 ? 1.0 : -1.0)",
+        "a": "math.abs(variable.Avar)/20*0.15"
+      },
+      "arrays": {
+        "textures": {
+          "Array.Xskins": [
+            "Texture.default",
+            "Texture.default2",
+            "Texture.default3",
+            "Texture.default4",
+            "Texture.default5",
+            "Texture.default6",
+            "Texture.default7",
+            "Texture.default8",
+            "Texture.default9",
+            "Texture.default10",
+            "Texture.default11",
+            "Texture.default12",
+            "Texture.default13"
+          ]
+        }
+      }
+    }
+  }
+}

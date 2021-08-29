@@ -1,0 +1,64 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:polar_bear",
+      "materials": {
+        "default": "polar_bear"
+      },
+      "textures": {
+        "default": "textures/entity/polarbear",
+        "default2": "textures/entity/polar_bear/v/polarbear10",
+        "default3": "textures/entity/polar_bear/v/polarbear2",
+        "default4": "textures/entity/polar_bear/v/polarbear3",
+        "default5": "textures/entity/polar_bear/v/polarbear4",
+        "default6": "textures/entity/polar_bear/v/polarbear5",
+        "default7": "textures/entity/polar_bear/v/polarbear6",
+        "default8": "textures/entity/polar_bear/v/polarbear7",
+        "default9": "textures/entity/polar_bear/v/polarbear8",
+        "default10": "textures/entity/polar_bear/v/polarbear9",
+        "default11": "textures/entity/polar_bear/c/polarbear10",
+        "default12": "textures/entity/polar_bear/c/polarbear2",
+        "default13": "textures/entity/polar_bear/c/polarbear3",
+        "default14": "textures/entity/polar_bear/c/polarbear4",
+        "default15": "textures/entity/polar_bear/c/polarbear5",
+        "default16": "textures/entity/polar_bear/c/polarbear6",
+        "default17": "textures/entity/polar_bear/c/polarbear7",
+        "default18": "textures/entity/polar_bear/c/polarbear8",
+        "default19": "textures/entity/polar_bear/c/polarbear9"
+      },
+      "geometry": {
+        "default": "geometry.polarbear"
+      },
+      "animations": {
+        "walk": "animation.quadruped.walk",
+        "move": "animation.polarbear.move",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.polarbear.baby_transform"
+      },
+      "scripts": {
+        "scale": "1.2*(0.95+0.1*variable.Nvar)",
+        "pre_animation": [
+          "variable.Nvar =(variable.Nvar ?? Math.random(-1,1));",
+          "variable.Avar = 0;",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ]
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.polarbear.move"
+        },
+        {
+          "baby": "controller.animation.polarbear.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.polarbear_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 37
+      }
+    }
+  }
+}

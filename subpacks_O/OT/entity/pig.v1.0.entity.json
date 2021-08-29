@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:pig",
+      "materials": {
+        "default": "pig"
+      },
+      "textures": {
+        "default": "textures/entity/pig/pig",
+        "saddled": "textures/entity/pig/pig_saddle",
+        "default2": "textures/entity/pig/v/pig10",
+        "default3": "textures/entity/pig/v/pig2",
+        "default4": "textures/entity/pig/v/pig3",
+        "default5": "textures/entity/pig/v/pig4",
+        "default6": "textures/entity/pig/v/pig5",
+        "default7": "textures/entity/pig/v/pig6",
+        "default8": "textures/entity/pig/v/pig7",
+        "default9": "textures/entity/pig/v/pig8",
+        "default10": "textures/entity/pig/v/pig9",
+        "default11": "textures/entity/pig/c/pig10",
+        "default12": "textures/entity/pig/c/pig2",
+        "default13": "textures/entity/pig/c/pig3",
+        "default14": "textures/entity/pig/c/pig4",
+        "default15": "textures/entity/pig/c/pig5",
+        "default16": "textures/entity/pig/c/pig6",
+        "default17": "textures/entity/pig/c/pig7",
+        "default18": "textures/entity/pig/c/pig8",
+        "default19": "textures/entity/pig/c/pig9"
+      },
+      "geometry": {
+        "default": "geometry.pig"
+      },
+      "animations": {
+        "setup": "animation.pig.setup.v1.0",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.pig.baby_transform"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          {
+            "walk": "query.modified_move_speed"
+          },
+          "look_at_target",
+          {
+            "baby_transform": "query.is_baby"
+          }
+        ],
+        "scale": "(0.95+0.1*variable.Nvar)",
+        "initialize": [
+          "variable.Nvar = Math.random(-1,1);",
+          "variable.Avar =0;",
+          "variable.Xvar = Math.random(0,999);"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.pig_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 2
+      }
+    }
+  }
+}

@@ -1,1 +1,62 @@
-{"format_version": "1.8.0", "minecraft:client_entity": {"description": {"identifier": "minecraft:spider", "min_engine_version": "1.8.0", "materials": {"default": "spider", "invisible": "spider_invisible"}, "textures": {"default": "textures/entity/spider/spider", "default2": "textures/entity/spider/v/spider10", "default3": "textures/entity/spider/v/spider2", "default4": "textures/entity/spider/v/spider3", "default5": "textures/entity/spider/v/spider4", "default6": "textures/entity/spider/v/spider5", "default7": "textures/entity/spider/v/spider6", "default8": "textures/entity/spider/v/spider7", "default9": "textures/entity/spider/v/spider8", "default10": "textures/entity/spider/v/spider9", "default11": "textures/entity/spider/cv/spider2", "default12": "textures/entity/spider/c/spider10", "default13": "textures/entity/spider/c/spider2", "default14": "textures/entity/spider/c/spider3", "default15": "textures/entity/spider/c/spider4", "default16": "textures/entity/spider/c/spider5", "default17": "textures/entity/spider/c/spider6", "default18": "textures/entity/spider/c/spider7", "default19": "textures/entity/spider/c/spider8", "default20": "textures/entity/spider/c/spider9"}, "geometry": {"default": "geometry.spider.v1.8"}, "animations": {"default_leg_pose": "animation.spider.default_leg_pose", "look_at_target": "animation.spider.look_at_target", "walk": "animation.spider.walk"}, "animation_controllers": [{"move": "controller.animation.spider.move"}], "render_controllers": ["controller.render.spider"], "spawn_egg": {"texture": "spawn_egg", "texture_index": 11}, "scripts": {"pre_animation": ["variable.Nvar = query.anim_time>0 ? variable.Nvar : Math.random(-1,1);", "variable.Avar = query.anim_time>0 ? variable.Avar : Math.random(-20,20);", "variable.Xvar = query.anim_time>0 ? variable.Xvar : Math.random(0,999);"]}}}}
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:spider",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/spider/spider",
+        "default2": "textures/entity/spider/v/spider10",
+        "default3": "textures/entity/spider/v/spider2",
+        "default4": "textures/entity/spider/v/spider3",
+        "default5": "textures/entity/spider/v/spider4",
+        "default6": "textures/entity/spider/v/spider5",
+        "default7": "textures/entity/spider/v/spider6",
+        "default8": "textures/entity/spider/v/spider7",
+        "default9": "textures/entity/spider/v/spider8",
+        "default10": "textures/entity/spider/v/spider9",
+        "default11": "textures/entity/spider/cv/spider2",
+        "default12": "textures/entity/spider/c/spider10",
+        "default13": "textures/entity/spider/c/spider2",
+        "default14": "textures/entity/spider/c/spider3",
+        "default15": "textures/entity/spider/c/spider4",
+        "default16": "textures/entity/spider/c/spider5",
+        "default17": "textures/entity/spider/c/spider6",
+        "default18": "textures/entity/spider/c/spider7",
+        "default19": "textures/entity/spider/c/spider8",
+        "default20": "textures/entity/spider/c/spider9"
+      },
+      "geometry": {
+        "default": "geometry.spider.v1.8"
+      },
+      "animations": {
+        "default_leg_pose": "animation.spider.default_leg_pose",
+        "look_at_target": "animation.spider.look_at_target",
+        "walk": "animation.spider.walk"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.spider.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.spider_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 11
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.Nvar =(variable.Nvar ?? Math.random(-1,1));",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ]
+      }
+    }
+  }
+}

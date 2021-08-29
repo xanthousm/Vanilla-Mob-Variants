@@ -1,0 +1,67 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:evocation_illager",
+      "materials": {
+        "default": "evoker"
+      },
+      "textures": {
+        "default": "textures/entity/illager/evoker",
+        "default2": "textures/entity/evocation_illager/v/evoker10",
+        "default3": "textures/entity/evocation_illager/v/evoker2",
+        "default4": "textures/entity/evocation_illager/v/evoker3",
+        "default5": "textures/entity/evocation_illager/v/evoker4",
+        "default6": "textures/entity/evocation_illager/v/evoker5",
+        "default7": "textures/entity/evocation_illager/v/evoker6",
+        "default8": "textures/entity/evocation_illager/v/evoker7",
+        "default9": "textures/entity/evocation_illager/v/evoker8",
+        "default10": "textures/entity/evocation_illager/v/evoker9",
+        "default11": "textures/entity/evocation_illager/c/evoker10",
+        "default12": "textures/entity/evocation_illager/c/evoker2",
+        "default13": "textures/entity/evocation_illager/c/evoker3",
+        "default14": "textures/entity/evocation_illager/c/evoker4",
+        "default15": "textures/entity/evocation_illager/c/evoker5",
+        "default16": "textures/entity/evocation_illager/c/evoker6",
+        "default17": "textures/entity/evocation_illager/c/evoker7",
+        "default18": "textures/entity/evocation_illager/c/evoker8",
+        "default19": "textures/entity/evocation_illager/c/evoker9"
+      },
+      "geometry": {
+        "default": "geometry.evoker"
+      },
+      "scripts": {
+        "scale": "0.9375*(0.95+0.1*variable.Nvar)",
+        "pre_animation": [
+          "variable.Nvar = 0.5;",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ]
+      },
+      "animations": {
+        "general": "animation.evoker.general.v1.0",
+        "casting": "animation.evoker.casting.v1.0",
+        "look_at_target": "animation.humanoid.look_at_target.default.v1.0",
+        "move": "animation.villager.move"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.evoker.general.v1.0"
+        },
+        {
+          "move": "controller.animation.villager.move"
+        }
+      ],
+      "particle_effects": {
+        "spell": "minecraft:evoker_spell"
+      },
+      "render_controllers": [
+        "controller.render.evoker_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 40
+      }
+    }
+  }
+}

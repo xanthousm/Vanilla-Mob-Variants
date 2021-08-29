@@ -1,1 +1,57 @@
-{"format_version": "1.8.0", "minecraft:client_entity": {"description": {"identifier": "minecraft:endermite", "materials": {"default": "endermite"}, "textures": {"default": "textures/entity/endermite", "default2": "textures/entity/endermite/v/endermite10", "default3": "textures/entity/endermite/v/endermite2", "default4": "textures/entity/endermite/v/endermite3", "default5": "textures/entity/endermite/v/endermite4", "default6": "textures/entity/endermite/v/endermite5", "default7": "textures/entity/endermite/v/endermite6", "default8": "textures/entity/endermite/v/endermite7", "default9": "textures/entity/endermite/v/endermite8", "default10": "textures/entity/endermite/v/endermite9", "default11": "textures/entity/endermite/c/endermite10", "default12": "textures/entity/endermite/c/endermite2", "default13": "textures/entity/endermite/c/endermite3", "default14": "textures/entity/endermite/c/endermite4", "default15": "textures/entity/endermite/c/endermite5", "default16": "textures/entity/endermite/c/endermite6", "default17": "textures/entity/endermite/c/endermite7", "default18": "textures/entity/endermite/c/endermite8", "default19": "textures/entity/endermite/c/endermite9"}, "geometry": {"default": "geometry.endermite"}, "animations": {"move": "animation.endermite.move"}, "animation_controllers": [{"move": "controller.animation.endermite.move"}], "render_controllers": ["controller.render.endermite"], "spawn_egg": {"texture": "spawn_egg", "texture_index": 25}, "scripts": {"pre_animation": ["variable.Nvar = query.anim_time>0 ? variable.Nvar : Math.random(-1,1);", "variable.Avar = query.anim_time>0 ? variable.Avar : Math.random(-20,20);", "variable.Xvar = query.anim_time>0 ? variable.Xvar : Math.random(0,999);"]}}}}
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:endermite",
+      "materials": {
+        "default": "endermite"
+      },
+      "textures": {
+        "default": "textures/entity/endermite",
+        "default2": "textures/entity/endermite/v/endermite10",
+        "default3": "textures/entity/endermite/v/endermite2",
+        "default4": "textures/entity/endermite/v/endermite3",
+        "default5": "textures/entity/endermite/v/endermite4",
+        "default6": "textures/entity/endermite/v/endermite5",
+        "default7": "textures/entity/endermite/v/endermite6",
+        "default8": "textures/entity/endermite/v/endermite7",
+        "default9": "textures/entity/endermite/v/endermite8",
+        "default10": "textures/entity/endermite/v/endermite9",
+        "default11": "textures/entity/endermite/c/endermite10",
+        "default12": "textures/entity/endermite/c/endermite2",
+        "default13": "textures/entity/endermite/c/endermite3",
+        "default14": "textures/entity/endermite/c/endermite4",
+        "default15": "textures/entity/endermite/c/endermite5",
+        "default16": "textures/entity/endermite/c/endermite6",
+        "default17": "textures/entity/endermite/c/endermite7",
+        "default18": "textures/entity/endermite/c/endermite8",
+        "default19": "textures/entity/endermite/c/endermite9"
+      },
+      "geometry": {
+        "default": "geometry.endermite"
+      },
+      "animations": {
+        "move": "animation.endermite.move"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.endermite.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.endermite_x"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 25
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.Nvar =(variable.Nvar ?? Math.random(-1,1));",
+          "variable.Avar = (variable.Avar ?? Math.random(-20,20));",
+          "variable.Xvar = (variable.Xvar ?? Math.random(0,999));"
+        ]
+      }
+    }
+  }
+}
